@@ -14,7 +14,7 @@ defined('ABSPATH') or exit();
 add_action('admin_menu', 'SQLiteViewer\sqlite_menu');
 
 function sqlite_menu() {
-  add_menu_page('SQLite Viewer', 'SQLite Viewer', 'manage_options', 'sqlite-viewer', 'SQLiteViewer\sqlite_viewer');
+  add_menu_page('SQLite Viewer', 'SQLite Viewer', 'manage_options', 'sqlite-viewer', 'SQLiteViewer\sqlite_viewer', 'dashicons-database');
 }
 
 function sqlite_viewer() {
